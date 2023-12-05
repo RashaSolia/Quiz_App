@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="shortcut icon" href="./1000_F_332687153_gmsohq86koOEWFYlYSI3N6xzb1zIcG88.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+     <main class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="heading animate__animated animate__bounceInDown">
+        <h1 class="mb-0">Quiz App</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <form
+            class="start-quiz col-lg-8 offset-lg-2 d-flex flex-column gap-3 animate__animated animate__fadeInLeft animate__delay-1s"
+            id="quizForm">
+            <div class="form-floating">
+              <select class="form-select" id="categoryMenu" aria-label="category Select">
+                <option value="">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option selected value="21">Sports</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="18">Science: Computers</option>
+                <option value="23">History</option>
+              </select>
+              <label for="categoryMenu">Choose Category</label>
+            </div>
+  
+            <div class="form-floating">
+              <select class="form-select" id="difficultyOptions" aria-label="difficulty Select">
+                <option selected value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+              <label for="difficultyOptions">Choose Difficulty Level</label>
+            </div>
+  
+            <div class="form-floating">
+              <input type="number" value="5" class="form-control" id="questionsNumber" placeholder="Number of Questions" />
+              <label for="questionsNumber">Number of Questions</label>
+            </div>
+  
+            <button type="button" class="btn btn-primary rounded-pill" id="startQuiz">
+              Start
+            </button>
+          </form>
+  
+          <div class="questions-container">
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
+
